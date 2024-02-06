@@ -1,121 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
-        id="bootstrap-css" />
-    <style>
-        .register .nav-tabs .nav-link:hover {
-            border: none;
-        }
-
-        .text-align {
-            margin-top: -3%;
-            margin-bottom: -9%;
-
-            padding: 10%;
-            margin-left: 30%;
-        }
-
-        .form-new {
-            margin-right: 22%;
-            margin-left: 20%;
-        }
-
-        .register-heading {
-            margin-left: 21%;
-            margin-bottom: 10%;
-            color: #e9ecef;
-        }
-
-        .register-heading h1 {
-            margin-left: 21%;
-            margin-bottom: 10%;
-            color: #e9ecef;
-        }
-
-        .register {
-            background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
-            margin-top: 3%;
-            padding: 3%;
-            border-radius: 2.5rem;
-        }
-
-        .btnSubmit {
-            width: 50%;
-            border-radius: 1rem;
-            padding: 1.5%;
-            color: #fff;
-            background-color: #03612e;
-            border: none;
-            cursor: pointer;
-            margin-right: 6%;
-            color: rgb(246, 246, 252);
-            margin-top: 4%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container register">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel"
-                    aria-labelledby="home-tab">
-                    <h3 class="register-heading text-nowrap">HTML Form to WhatsApp</h3>
-                    <div class="row register-form">
-                        <div class="col-md-12">
-                            <form autocomplete="off">
-                                <div class="form-group">
-                                    <input type="text" name="Name" id="name" class="form-control"
-                                        placeholder="Your Name *" value="" required="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="Email" id="email" class="form-control"
-                                        placeholder="Your Email *" value="" required="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" name="Phone" id="phone" class="form-control"
-                                        placeholder="Your Contact Number *" value="" required="" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control" id="service">
-                                        <option>Default select</option>
-                                        <option>Website Development</option>
-                                        <option>Mobile App Development</option>
-                                        <option>Web and Mobile Application</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="button" name="submit" class="btnSubmit btn-block" onclick="gotowhatsapp()" value="Submit" />
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function gotowhatsapp() {
-
-            var name = document.getElementById("name").value;
-            var phone = document.getElementById("phone").value;
-            var email = document.getElementById("email").value;
-            var service = document.getElementById("service").value;
-
-            var url = "https://wa.me/917045332329?text="
-                + "Name: " + name + "%0a"
-                + "Phone: " + phone + "%0a"
-                + "Email: " + email + "%0a"
-                + "Service: " + service;
-
-            window.open(url, '_blank').focus();
-        }
-    </script>
+    <div id="root"><div class="App" style="background-color: rgb(244, 245, 246);"><div class="form-container" style="direction: ltr;"><form class="ant-form ant-form-vertical"><div class="form-element-container"><div class="form-group"><div style="width: 96%;"><h1 class="ant-typography header-title">Jeevan Chicken </h1><div class="image-container banner"><img src="https://uploads.whatsform.com/65be441986cae29aad8ee436/4378B550-F8F8-4DC4-A371-E95C7E3443B9-1706988541132.jpg?x-t=1706988545479" class="" alt="20240204_005854.jpg"></div><label class="sub-label"><p>👉If your home is within 3km from my shop then home delivery is free to you. The price of the product you are ordering should be above <strong>₹499/-</strong></p><p>👉 If you order a useful product for <strong>₹499/-</strong> , you will have to pay a delivery charge of <strong>₹30/-</strong> for every kilometer.</p></label></div></div></div><div class="form-element-container"><div class="form-group"><div style="width: 85%;"><h1 class="ant-typography header-title">Place your order</h1><label class="sub-label">Order will be confirmed via WhatsApp before payment</label></div></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="ant-form-item-required" title="How many kg of chicken boiler do you need ? ">How many kg of chicken boiler do you need ? </label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="image-container banner"><img height="600" src="https://uploads.whatsform.com/65be441986cae29aad8ee436/2125C1AD-B51D-4E75-BF95-2C6292C7AFB3-1707195712100.jpeg?x-t=1707195714084" alt="images_(5)_(15)-transformed.jpeg"></div><div class="ant-select ant-select-lg ant-select-single ant-select-show-arrow"><div class="ant-select-selector"><span class="ant-select-selection-search"><input id="2125C1AD-B51D-4E75-BF95-2C6292C7AFB3" autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="2125C1AD-B51D-4E75-BF95-2C6292C7AFB3_list" aria-autocomplete="list" aria-controls="2125C1AD-B51D-4E75-BF95-2C6292C7AFB3_list" aria-activedescendant="2125C1AD-B51D-4E75-BF95-2C6292C7AFB3_list_0" readonly="" unselectable="on" value="" style="opacity: 0;"></span><span class="ant-select-selection-placeholder">How much Chicken do you need!</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span></div></div></div></div></div><label class="sub-label"><p>In 1 kg of live boiler chicken, you will get 650 grams of mutton. 350 grams is wasted</p></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="ant-form-item-required" title="How about chicken pieces?">How about chicken pieces?</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-radio-group ant-radio-group-outline" id="AC06CCFC-C1DC-49BD-BCE6-8A932A845C89" style="width: 100%;"><div class="ant-space ant-space-vertical" style="gap: 8px;"><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Tandoori piece "><span class="ant-radio-inner"></span></span><span>👉 Tandoori piece </span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Biryani piece"><span class="ant-radio-inner"></span></span><span>👉 Biryani piece</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Medium piece"><span class="ant-radio-inner"></span></span><span>👉 Medium piece</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Small Piece"><span class="ant-radio-inner"></span></span><span>👉 Small Piece</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Chana piece"><span class="ant-radio-inner"></span></span><span>👉 Chana piece</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Eight pieces of chicken."><span class="ant-radio-inner"></span></span><span>👉 Eight pieces of chicken.</span></label></div></div><div class="ant-space-item"><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 12 pieces of chicken."><span class="ant-radio-inner"></span></span><span>👉 12 pieces of chicken.</span></label></div></div></div></div></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="" title="Do you want more of this?">Do you want more of this?</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-checkbox-group" id="2033DDEE-E59B-4497-9335-D523924C1DB8" style="width: 100%;"><div class="ant-space ant-space-horizontal ant-space-align-center grid-layout" style="flex-wrap: wrap; gap: 8px;"><div class="ant-space-item" style=""><div><div class="image-container choice-image undefined"><img src="https://uploads.whatsform.com/65be441986cae29aad8ee436/61126bbeaba60e5e5e6f93d3-1706977981073.jpeg?x-t=1706977983112" alt="images (5) (11).jpeg"></div><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="👉 Desi Eggs 12-p 180₹"><span class="ant-checkbox-inner"></span></span><span>👉 Desi Eggs 12-p 180₹</span></label></div></div><div class="ant-space-item" style=""><div><div class="image-container choice-image undefined"><img src="https://uploads.whatsform.com/65be441986cae29aad8ee436/61126bbeaba60e5e5e6f93d4-1706977994134.jpeg?x-t=1706977995139" alt="images (5) (10).jpeg"></div><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="👉 Normal Eggs 12-p 90₹"><span class="ant-checkbox-inner"></span></span><span>👉 Normal Eggs 12-p 90₹</span></label></div></div><div class="ant-space-item" style=""><div><div class="image-container choice-image undefined"><img src="https://uploads.whatsform.com/65be441986cae29aad8ee436/61126be5aba60e5e5e6f95a7-1706978820575.jpg?x-t=1706978823382" alt="IMG20240203220543.jpg"></div><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="👉 Ginger Garlic Paste 1-p 5₹"><span class="ant-checkbox-inner"></span></span><span>👉 Ginger Garlic Paste 1-p 5₹</span></label></div></div><div class="ant-space-item" style=""><div><div class="image-container choice-image undefined"><img src="https://uploads.whatsform.com/65be441986cae29aad8ee436/61126bf1aba60e5e5e6f95df-1706978849231.jpg?x-t=1706978851704" alt="IMG20240203221637.jpg"></div><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="👉 Tikka Masala 1-p 30₹ "><span class="ant-checkbox-inner"></span></span><span>👉 Tikka Masala 1-p 30₹ </span></label></div></div></div></div></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div style="width: 85%;"><h1 class="ant-typography header-title">Your details</h1><label class="sub-label"></label></div></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="ant-form-item-required" title="Full Name">Full Name</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="" type="text" id="9E66F946-5BEE-4625-8F97-91EDA8DF7991" class="ant-input ant-input-lg" value=""></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="" title="Phone number">Phone number</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="" type="text" id="821D7F0B-0DE3-41CF-ADDB-94BBA18F4C5F" class="ant-input ant-input-lg" value=""></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="ant-form-item-required" title="Street Address Line 1">Street Address Line 1</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="" type="text" id="DA167259-4230-4400-9822-1AA343270BD6" class="ant-input ant-input-lg" value=""></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="" title="Street Address Line 2">Street Address Line 2</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="" type="text" id="4C3516EB-5689-427B-9502-0810391CACD8" class="ant-input ant-input-lg" value=""></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="" title="👉 Zip Code">👉 Zip Code</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="" type="text" id="AA7FBC65-6360-4307-B2DD-B116703DD59A" class="ant-input ant-input-lg" value=""></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="" title="When do you want the item delivered?">When do you want the item delivered?</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-radio-group ant-radio-group-outline" id="C56A2292-7A24-4DA5-AF4C-4F7B4CD78B00" style="width: 100%;"><div class="ant-space ant-space-vertical" style="gap: 8px;"><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 In 30 minutes "><span class="ant-radio-inner"></span></span><span>👉 In 30 minutes </span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 In 1-2 hours"><span class="ant-radio-inner"></span></span><span>👉 In 1-2 hours</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 In 2-5 hours"><span class="ant-radio-inner"></span></span><span>👉 In 2-5 hours</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Tomorrow morning"><span class="ant-radio-inner"></span></span><span>👉 Tomorrow morning</span></label></div></div><div class="ant-space-item" style=""><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Tomorrow afternoon"><span class="ant-radio-inner"></span></span><span>👉 Tomorrow afternoon</span></label></div></div><div class="ant-space-item"><div><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="👉 Tomorrow evening"><span class="ant-radio-inner"></span></span><span>👉 Tomorrow evening</span></label></div></div></div><div style="display: flex; margin-top: 8px; align-items: baseline;"><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="other"><span class="ant-radio-inner"></span></span><span>Other</span></label></div></div></div></div></div></div><label class="sub-label"><p>If you want delivery within 30 minutes then you will have to pay delivery charge of <strong><em>₹50/-</em></strong></p></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="flex-wrap: nowrap; row-gap: 0px;"><div class="ant-col ant-form-item-label"><label class="" title="Type a question">Type a question</label></div><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="" type="text" id="A9B9ABCF-386B-41A7-BD6F-D839E2EA7B52" class="ant-input ant-input-lg" value=""></div></div></div></div><label class="sub-label"></label></div></div><div class="form-element-container"><div class="form-group"><div class="ant-row ant-form-item" style="margin-bottom: 0px; row-gap: 0px;"><div class="ant-col ant-col-23 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><button type="submit" class="ant-btn ant-btn-primary submit-button"><span>Submit on WhatsApp</span></button></div></div></div></div></div></div></form><p class="wf-poweredby">A WhatsApp form created using <a href="https://whatsform.com/?utm_source=whatsform/Do_39r" target="_blank" rel="noreferrer">WhatsForm</a></p></div></div></div>
 </body>
-
 </html>
